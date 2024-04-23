@@ -39,3 +39,15 @@ teamData.getTeams = function() {
     },
   ];
 }
+
+var projectData;
+
+if (projectData === undefined) {
+  projectData = {};
+}
+
+projectData.getProjectInfo = function() {
+  return {
+    name: "ihc-proyecto-g2",
+  };
+}
