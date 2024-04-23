@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Documento</title>
-</head>
-<body>
-  <h1>Hola mundo</h1>
-  <a href="./content/entregable-0.pdf" download>Entregable cero</a>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mi aplicación React</title>
+    <link rel="stylesheet" href="./css/jhonnatan.styles.css" />
+    <!-- Estilos de Water.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	</head>
+	<body>
+		<div id="root"></div>
+    <!-- React y ReactDom -->
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+		<script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <!-- Babel -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Modelo de datos -->
+    <script src="./js/model.js"></script>
+    <!-- Componente principal -->
+		<script type="text/babel">
+
+      // Componente principal
+      const App = () => {
+        return (
+          <React.Fragment>
+            <Abstract />
+            <Teams />
+            <Deliverable />
+          </React.Fragment>
+        );
+      };
+
+      // Componente del resumen
+      const Abstract = () => {
+        return (
+          <section>
+            <h1 className="text-center">Resumen</h1>
+          </section>
+        );
+      };
+
+      // Componente de los miembros del equipo
+      const teams = teamData.getTeams();
+			const Teams = () => {
+				return (
+					<section>
+						<h1 className="text-center">Miembros del Equipo</h1>
+						<ul className="grid grid-cols-3 place-items-stretch">
+							{teams.map((member) => (
+								<li key={member.id} className="flex-col items-center gap-2">
+                  <img width="100" src={member.avatar} alt={member.name} className="rounded-full"/>
+									<p>{member.name}</p>
+                  <p>{member.role}</p>
+                  <ul className="flex-row gap-4">
+                    {member.socials.map((social) => (
+                      <li key={social.id}>
+                        <a href={social.url} target="_blank" rel="noreferrer noopener nofollow" title={social.name}>
+                          <img src={`./img/brand-${social.name}.svg`} alt={social.name} />
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+								</li>
+							))}
+						</ul>
+					</section>
+				);
+			};
+
+      // Componente de la sección de entregables
+      const Deliverable = () => {
+        return (
+          <section>
+            <h1 className="text-center">Entregables</h1>
+          </section>
+        );
+      };
+
+      // Renderizar la aplicación
+			ReactDOM.render(<App />, document.getElementById('root'));
+		</script>
+	</body>
 </html>
