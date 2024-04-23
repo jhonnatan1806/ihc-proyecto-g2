@@ -59,7 +59,7 @@
                     {member.socials.map((social) => (
                       <li key={social.id}>
                         <a href={social.url} target="_blank" rel="noreferrer noopener nofollow" title={social.name}>
-                          <img src={`/${projectInfo.name}/img/brand-${social.name}.svg`} alt={social.name} />
+                          <img src={`/${projectInfo.name}/img/brand-${social.name.toLowerCase()}.svg`} alt={social.name} />
                         </a>
                       </li>
                     ))}
