@@ -1,7 +1,19 @@
+var projectData;
+
 var teamData;
 
 if (teamData === undefined) {
   teamData = {};
+}
+
+if (projectData === undefined) {
+  projectData = {};
+}
+
+projectData.getProjectInfo = function() {
+  return {
+    name: "ihc-proyecto-g2",
+  };
 }
 
 teamData.getTeams = function() {
@@ -38,16 +50,4 @@ teamData.getTeams = function() {
       ],
     },
   ];
-}
-
-var projectData;
-
-if (projectData === undefined) {
-  projectData = {};
-}
-
-projectData.getProjectInfo = function() {
-  return {
-    name: "ihc-proyecto-g2",
-  };
 }
