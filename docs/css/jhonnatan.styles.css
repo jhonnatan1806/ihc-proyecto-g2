@@ -67,3 +67,10 @@ p {
 .rounded-full {
   border-radius: 9999px;
 }
+
+.abstract-text {
+  font-size: 16px; 
+  color: #333; 
+  margin-top: 10px; 
+  text-align: justify; 
+}
