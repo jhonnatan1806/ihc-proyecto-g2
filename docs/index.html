@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mi aplicación React</title>
     <link rel="stylesheet" href="./css/jhonnatan.styles.css" />
+    <link rel="stylesheet" href="./css/gabriel.style.css" />
     <!-- Estilos de Water.css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 	</head>
@@ -60,7 +61,7 @@
                     {member.socials.map((social) => (
                       <li key={social.id}>
                         <a href={social.url} target="_blank" rel="noreferrer noopener nofollow" title={social.name}>
-                          <img src={`/${projectInfo.name}/img/brand-${social.name.toLowerCase()}.svg`} alt={social.name} />
+                          <img src={`https://jhonnatan1806.github.io/${projectInfo.name}/img/brand-${social.name.toLowerCase()}.svg`} alt={social.name} />
                         </a>
                       </li>
                     ))}
@@ -72,15 +73,31 @@
 				);
 			};
 
+      
       // Componente de la sección de entregables
       const Deliverable = () => {
-        return (
-          <section>
-            <h1 className="text-center">Entregables</h1>
-            <a href={`/${projectInfo.name}/assets/entregable-0.pdf`} download>Descargar Entregable 0</a> 
-          </section>
-        );
-      };
+      return (
+        <section className="deliverables-section">
+          <h1 className="section-title">Entregables</h1>
+          <div className="deliverables-list">
+            <div className="deliverable-item">
+              <a href="./assets/entregable-0.pdf" download className="download-link">
+                <span>Descargar Entregable 0</span>
+                <img src="./img/download.svg" alt="Download Icon" className="download-icon" />
+              </a>
+            </div>
+            <div className="deliverable-item">
+              <a href="./assets/entregable-1.pdf" download className="download-link">
+                <span>Descargar Entregable 1</span>
+                <img src="./img/download.svg" alt="Download Icon" className="download-icon" />
+              </a>
+            </div>
+            {/* Agrega más elementos de entregables si es necesario */}
+          </div>
+        </section>
+      );
+    };
+
 
       // Renderizar la aplicación
 			ReactDOM.render(<App />, document.getElementById('root'));
