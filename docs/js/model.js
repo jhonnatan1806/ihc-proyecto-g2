@@ -24,8 +24,8 @@ teamData.getTeams = function() {
       avatar: 'https://avatars.githubusercontent.com/u/129352498?v=4',
       role: 'Lorem ipsum',
       socials: [
-        {id: 1, name: 'Linkedin', url: 'https://www.linkedin.com/in/gabriel-barrientos/'},
-        {id: 2, name: 'Github', url: 'https://www.github.com/gabriel-barrientos'},
+        {id: 1, name: 'Linkedin', url: 'https://www.linkedin.com/in/gabriel-adrian-barrientos-cardenas-a488892a4/'},
+        {id: 2, name: 'Github', url: 'https://www.github.com/GabrielBarrientos99'},
       ],
     },
     {
