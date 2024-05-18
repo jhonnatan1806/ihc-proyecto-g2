@@ -8,6 +8,7 @@ import HomePage from './pages/Home.jsx';
 import BotPage from './pages/Bot.jsx';
 import ProfilePage from './pages/Profile.jsx';
 import QuizzPage from './pages/Quizz.jsx';
+import TableChallenge from './pages/TableChallenge.jsx';
 
 import './index.css';
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
 			{
 				path: 'quizz',
 				element: <QuizzPage />,
+			},
+			{
+				path: 'table-challenge', 
+				element: <TableChallenge />,
 			},
 		],
 	},
