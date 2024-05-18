@@ -37,7 +37,7 @@ function Header() {
 	};
 
 	return (
-		<section className="sticky inset-0 backdrop-blur-md bg-white/75">
+		<section className="sticky inset-0 z-50 backdrop-blur-md bg-white/75 ">
 			<header className="container mx-auto h-16 flex items-center justify-between">
 				<Navbar />
 				<div className="flex flex-row gap-4">
