@@ -11,7 +11,7 @@ const ChatMessage = ({ message, isUser }) => {
       transition={{ duration: 0.5 }}
       className={`flex ${isUser ? 'justify-end' : 'justify-start'} mb-4`}
     >
-      <div className={`p-3 rounded-lg ${isUser ? 'bg-green-500 text-white' : 'bg-yellow-300 text-black'} max-w-xs shadow-md`}>
+      <div className={`p-3 rounded-lg ${isUser ? 'bg-green-700 text-white' : 'bg-yellow-200 text-black'} max-w-xs shadow-md`}>
         {message}
       </div>
     </motion.div>

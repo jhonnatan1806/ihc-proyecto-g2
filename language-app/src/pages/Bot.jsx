@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import ChatBot from '../components/ChatBot';
 import Header from '../components/Header';
 import ChatList from '../components/ChatList';
+import FAQSection from '../components/FAQSection';
+import { FaChevronDown } from "react-icons/fa";
 
 const BotPage = () => {
   const user = {
@@ -21,28 +23,24 @@ const BotPage = () => {
       <Header user={user} />
       <div className="flex flex-1">
         {isChatListOpen && <ChatList />}
-        <main className="flex-grow">
+        <main className="flex-grow flex flex-col">
           <ChatBot />
+          <FAQSection />
         </main>
       </div>
       <footer className="bg-gray-800 text-white p-4 text-center">
         © 2024 Plataforma de Aprendizaje
       </footer>
       <button
-        className="fixed bottom-10 right-10 bg-green-500 text-white p-3 rounded-full shadow-lg"
+        className="fixed bottom-4 left-4 bg-success/75 text-white p-2 rounded-full shadow-lg z-50"
         onClick={toggleChatList}
       >
-        {isChatListOpen ? (
-          <span className="material-icons">keyboard_arrow_left</span>
-        ) : (
-          <span className="material-icons">keyboard_arrow_right</span>
-        )}
+        <div className={`transition-all duration-400 ${isChatListOpen ? "rotate-90": "-rotate-90"}`}>
+                        <FaChevronDown size={14} />
+        </div>
       </button>
     </div>
   );
 };
 
 export default BotPage;
-
-
-

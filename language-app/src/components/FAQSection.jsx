@@ -3,7 +3,7 @@ import React from 'react';
 
 const FAQSection = () => {
   return (
-    <section className="bg-red-500 text-white p-6">
+    <section className="bg-yellow-200 text-gray-800 p-6 mt-4 rounded-md">
       <h2 className="text-xl font-bold mb-4">Preguntas Frecuentes</h2>
       <ul className="list-disc list-inside">
         <li>¿Cómo puedo empezar a usar el chatbot?</li>

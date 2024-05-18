@@ -1,17 +1,17 @@
-// src/components/Header.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
 import UserProfile from './UserProfile';
+import {Button} from "@nextui-org/react";
+import { FaChevronDown } from "react-icons/fa";
 
 const Header = ({ user }) => {
   return (
-    <header className="bg-yellow-600 text-white p-4 flex justify-between items-center shadow-md">
-      <h1 className="text-2xl font-bold">Chat Bot</h1>
-      <div className="flex items-center space-x-4">
-        <UserProfile name={user.name} imageUrl={user.imageUrl} />
-        <button className="bg-yellow-500 p-2 rounded-full hover:bg-yellow-400 transition duration-300">
-          <span className="material-icons">settings</span>
-        </button>
+    <header className="bg-white py-4 px-6 flex justify-between items-center shadow-md">
+      <h1 className="text-3xl font-bold text-slate-800">Chat Bot</h1>
+      <div className="flex items-center space-x-4">        
+        <Button color="danger" variant="bordered" endContent={<FaChevronDown />}>
+            settings
+        </Button>  
       </div>
     </header>
   );

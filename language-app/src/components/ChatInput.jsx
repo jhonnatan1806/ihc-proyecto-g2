@@ -22,7 +22,7 @@ const ChatInput = ({ onSendMessage }) => {
         onChange={(e) => setMessage(e.target.value)}
         placeholder="Escribe tu mensaje..."
       />
-      <button type="submit" className="ml-3 bg-green-500 text-white p-2 rounded-md hover:bg-green-400 transition duration-300">
+      <button type="submit" className="ml-3 bg-green-700 text-white p-2 rounded-md hover:bg-green-600 transition duration-300">
         Enviar
       </button>
     </form>
