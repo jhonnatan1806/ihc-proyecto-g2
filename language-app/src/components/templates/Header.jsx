@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, DropdownSection, Link, User } from '@nextui-org/react';
 import { TbWorld } from 'react-icons/tb';
+import { FaChevronDown } from 'react-icons/fa';
 
 const routes = [
 	{ path: '/', name: 'Inicio' },
@@ -100,3 +101,4 @@ function Header() {
 }
 
 export default Header;
+
