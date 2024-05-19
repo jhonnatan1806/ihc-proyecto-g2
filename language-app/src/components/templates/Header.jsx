@@ -68,7 +68,7 @@ function Header() {
                                     <DropdownSection title="Opciones" showDivider>  
 									<DropdownItem key="settings" href='/profile'>Mi perfil</DropdownItem>
 									<DropdownItem key="analytics">Recompensas</DropdownItem>
-									<DropdownItem key="configurations">Ajustes</DropdownItem>
+									<DropdownItem key="configurations" href='/settings'>Ajustes</DropdownItem>
                                     </DropdownSection>
 									<DropdownItem key="logout" color="danger" onClick={handleLogin}>
 										Cerrar sesión
