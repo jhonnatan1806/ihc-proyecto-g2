@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import PageHeader from '../components/PageHeader';
 import UserTable from '../components/UserTable';
 import FilterOptions from '../components/FilterOptions';
 import Statistics from '../components/Statistics';
+import TopFiveTable from '../components/TopFiveTable';
 
 const TableChallenge = () => {
   const initialUsers = [
@@ -46,14 +48,37 @@ const TableChallenge = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className="container mx-auto p-4"
+    >
       <PageHeader />
-      <div className="my-4">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="my-4"
+      >
         <FilterOptions onSearch={handleSearch} onFilter={handleFilter} onReset={handleReset} />
-      </div>
-      <UserTable users={users} />
-      <Statistics users={users} />
-    </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        className="grid grid-cols-1 md:grid-cols-3 gap-4"
+      >
+        <div className="w-full md:col-span-2">
+          <UserTable users={users} />
+          <Statistics users={users} />
+        </div>
+        <div className="w-full md:col-span-1">
+          <TopFiveTable users={users} />
+        </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
