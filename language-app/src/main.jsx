@@ -9,6 +9,7 @@ import BotPage from './pages/Bot.jsx';
 import ProfilePage from './pages/Profile.jsx';
 import QuizzPage from './pages/Quizz.jsx';
 import TableChallenge from './pages/TableChallenge.jsx';
+import SettingsPage from './pages/Settings.jsx';
 
 import './index.css';
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
 				path: 'table-challenge', 
 				element: <TableChallenge />,
 			},
+			{
+				path: 'settings',
+				element: <SettingsPage/>
+			}
 		],
 	},
 ]);
