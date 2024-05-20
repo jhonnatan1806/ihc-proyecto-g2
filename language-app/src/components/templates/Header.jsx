@@ -1,7 +1,21 @@
 import React from 'react';
-import { Button, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, DropdownSection, Link, User } from '@nextui-org/react';
+import { Button, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Divider, Link, User } from '@nextui-org/react';
+import {
+	Navbar,
+	NavbarBrand,
+	NavbarMenuToggle,
+	NavbarMenu,
+	NavbarMenuItem,
+	NavbarContent,
+	NavbarItem,
+} from '@nextui-org/react';
 import { TbWorld } from 'react-icons/tb';
-import { FaChevronDown } from 'react-icons/fa';
+
+const mockUser = {
+	name: 'Jane Doe',
+	avatar: 'https://i.pravatar.cc/150?u=a04258114e29026702d',
+	toke: '1234567890',
+};
 
 const routes = [
 	{ path: '/', name: 'Inicio' },
@@ -9,96 +23,141 @@ const routes = [
 	{ path: '/bot', name: 'Practicar' },
 ];
 
-const Navbar = () => {
-	return (
-		<nav className="flex flex-row gap-8">
-			<Link id="logo" href={'/'} className="font-bold text-lg">
-				Logo
-			</Link>
-			<ul className="flex flex-row gap-4">
-				{routes.map((route, index) => (
-					<li key={index}>
-						<Link href={route.path} underline="hover" size="sm">
-							{route.name}
-						</Link>
-					</li>
-				))}
-			</ul>
-		</nav>
-	);
-};
+const menuItems = [
+	{ name: 'Perfil', path: '/profile' },
+	{ name: 'Actividad', path: '/activity' },
+	{ name: 'Recompensas', path: '/rewards' },
+	{ name: 'Ajustes', path: '/settings' },
+	{ name: 'Cerrar sesión', path: '/logout' },
+];
 
 function Header() {
-	const [userLogged, setUserLogged] = React.useState(false);
-	const [selectedKeys, setSelectedKeys] = React.useState(new Set(['ES']));
-	const selectedValue = React.useMemo(() => Array.from(selectedKeys).map((key) => key.toUpperCase()).join(''), [selectedKeys]);
+	const [user, setUser] = React.useState(null);
 
 	const handleLogin = () => {
-		setUserLogged(!userLogged);
+		setUser(mockUser);
+	};
+
+	const handleLogout = () => {
+		setUser(null);
 	};
 
 	return (
-		<section className="sticky inset-0 z-50 backdrop-blur-md bg-white/75 ">
-			<header className="container mx-auto h-16 flex items-center justify-between">
-				<Navbar />
-				<div className="flex flex-row gap-4">
-					{!userLogged ? (
-						<>
-							<Button color="primary" variant="flat" onClick={handleLogin}>
+		<Navbar disableAnimation isBordered className="sticky inset-0 z-50 backdrop-blur-md bg-white/75">
+			<NavbarContent className="sm:hidden" justify="start">
+				<NavbarMenuToggle />
+			</NavbarContent>
+
+			<NavbarContent className="sm:hidden" justify="center">
+				<NavbarBrand>
+					<p className="font-bold text-inherit">Logo</p>
+				</NavbarBrand>
+			</NavbarContent>
+
+			<NavbarContent className="hidden sm:flex gap-4" justify="center">
+				<NavbarBrand>
+					<p className="font-bold text-inherit">Logo</p>
+				</NavbarBrand>
+				{routes.map((route, index) => (
+					<NavbarItem key={index}>
+						<Link href={route.path} color="primary" underline="hover">
+							{route.name}
+						</Link>
+					</NavbarItem>
+				))}
+			</NavbarContent>
+
+			<NavbarContent justify="end">
+				{user !== null ? (
+					<>
+						<Dropdown placement="bottom-start">
+							<DropdownTrigger>
+								<User
+									as={Button}
+									variant="flat"
+									avatarProps={{
+										src: user.avatar,
+										className: 'w-8 h-8',
+									}}
+									className="transition-transform hidden md:flex"
+									name={user.name}
+								/>
+							</DropdownTrigger>
+							<DropdownMenu aria-label="User Actions" variant="flat">
+								{menuItems.map((item, index) => (
+									<DropdownItem
+										key={index}
+										href={item.path}
+										variant="flat"
+										color={index === menuItems.length - 1 ? 'danger' : 'default'}>
+										{item.name}
+									</DropdownItem>
+								))}
+							</DropdownMenu>
+						</Dropdown>
+					</>
+				) : (
+					<>
+						<NavbarItem className="hidden lg:flex">
+							<Link as="button" color="primary" onClick={handleLogin}>
 								Acceder
-							</Button>
-							<Button color="primary" variant="solid">
+							</Link>
+						</NavbarItem>
+						<NavbarItem>
+							<Button as={Link} color="primary" variant="solid" href="/register">
 								Registrarse
 							</Button>
-						</>
-					) : (
-						<>
-							<Dropdown placement="bottom-start">
-								<DropdownTrigger>
-									<User
-										as="button"
-										avatarProps={{
-											src: 'https://i.pravatar.cc/150?u=a04258114e29026702d',
-										}}
-										className="transition-transform"
-										name="Jane Doe"
-									/>
-								</DropdownTrigger>
-								<DropdownMenu aria-label="User Actions" variant="flat">
-                                    <DropdownSection title="Opciones" showDivider>  
-									<DropdownItem key="settings" href='/profile'>Mi perfil</DropdownItem>
-									<DropdownItem key="analytics">Recompensas</DropdownItem>
-									<DropdownItem key="configurations">Ajustes</DropdownItem>
-                                    </DropdownSection>
-									<DropdownItem key="logout" color="danger" onClick={handleLogin}>
-										Cerrar sesión
-									</DropdownItem>
-								</DropdownMenu>
-							</Dropdown>
-						</>
-					)}
-					<Dropdown placement="bottom-start">
-						<DropdownTrigger>
-							<Button color="primary" variant="flat" endContent={<TbWorld size={16} />}>
-								{selectedValue}
-							</Button>
-						</DropdownTrigger>
-						<DropdownMenu
-							aria-label="Static Actions"
-							variant="flat"
-							disallowEmptySelection
-							selectionMode="single"
-							selectedKeys={selectedKeys}
-							onSelectionChange={setSelectedKeys}>
-							<DropdownItem key="es">Español</DropdownItem>
-							<DropdownItem key="pr">Português</DropdownItem>
-						</DropdownMenu>
-					</Dropdown>
-				</div>
-			</header>
-		</section>
+						</NavbarItem>
+					</>
+				)}
+				<Dropdown placement="bottom-start">
+					<DropdownTrigger className="hidden md:flex">
+						<Button color="primary" variant="flat" endContent={<TbWorld size={16} />}>
+							ES
+						</Button>
+					</DropdownTrigger>
+					<DropdownMenu aria-label="Static Actions" variant="flat" disallowEmptySelection selectionMode="single">
+						<DropdownItem key="es">Español</DropdownItem>
+						<DropdownItem key="pr">Português</DropdownItem>
+					</DropdownMenu>
+				</Dropdown>
+			</NavbarContent>
+
+			<NavbarMenu>
+				{user !== null && (
+					<>
+						<User
+							avatarProps={{
+								src: user.avatar,
+							}}
+							className="transition-transform justify-start md:hidden"
+							name={user.name}
+						/>
+						<Divider orientation="horizontal" className="my-2" />
+						{menuItems.map((item, index) => (
+							<NavbarMenuItem key={`${item}-${index}`}>
+								<Link
+									className="w-full"
+									color={index === menuItems.length - 1 ? 'danger' : 'foreground'}
+									href={item.path}>
+									{item.name}
+								</Link>
+							</NavbarMenuItem>
+						))}
+                        <Divider orientation="horizontal" className="my-2" />
+					</>
+				)}
+				
+				{routes.map((route, index) => (
+					<NavbarMenuItem key={`${route}-${index}`}>
+						<Link className="w-full" color={index === route.length - 1 ? 'danger' : 'foreground'} href={route.path}>
+							{route.name}
+						</Link>
+					</NavbarMenuItem>
+				))}
+			</NavbarMenu>
+		</Navbar>
 	);
 }
 
 export default Header;
-
