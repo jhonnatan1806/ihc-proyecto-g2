@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "title": "Viajes",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 2,
+        "title": "Deportes",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 3,
+        "title": "Comida",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 4,
+        "title": "Familia",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 5,
+        "title": "Trabajo",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 6,
+        "title": "Estudios",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 7,
+        "title": "Salud",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 8,
+        "title": "Dinero",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 9,
+        "title": "Amor",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 10,
+        "title": "Amistad",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    }
+
+]
