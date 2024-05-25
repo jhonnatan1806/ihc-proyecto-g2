@@ -38,10 +38,6 @@ function Header() {
 		setUser(mockUser);
 	};
 
-	const handleLogout = () => {
-		setUser(null);
-	};
-
 	return (
 		<Navbar disableAnimation isBordered className="sticky inset-0 z-50 backdrop-blur-md bg-white/75">
 			<NavbarContent className="sm:hidden" justify="start">
@@ -50,13 +46,13 @@ function Header() {
 
 			<NavbarContent className="sm:hidden" justify="center">
 				<NavbarBrand>
-					<p className="font-bold text-inherit">Logo</p>
+					<p className="font-bold text-inherit">Language</p>
 				</NavbarBrand>
 			</NavbarContent>
 
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">
 				<NavbarBrand>
-					<p className="font-bold text-inherit">Logo</p>
+					<p className="font-bold text-inherit">Language</p>
 				</NavbarBrand>
 				{routes.map((route, index) => (
 					<NavbarItem key={index}>
@@ -79,6 +75,7 @@ function Header() {
 										src: user.avatar,
 										className: 'w-8 h-8',
 									}}
+                                    radius="sm"
 									className="transition-transform hidden md:flex"
 									name={user.name}
 								/>
@@ -99,12 +96,12 @@ function Header() {
 				) : (
 					<>
 						<NavbarItem className="hidden lg:flex">
-							<Link as="button" color="primary" onClick={handleLogin}>
+							<Link as="button" color="primary" radius="sm" onClick={handleLogin}>
 								Acceder
 							</Link>
 						</NavbarItem>
 						<NavbarItem>
-							<Button as={Link} color="primary" variant="solid" href="/register">
+							<Button as={Link} color="primary" radius="sm" href="/register">
 								Registrarse
 							</Button>
 						</NavbarItem>
@@ -112,7 +109,7 @@ function Header() {
 				)}
 				<Dropdown placement="bottom-start">
 					<DropdownTrigger className="hidden md:flex">
-						<Button color="primary" variant="flat" endContent={<TbWorld size={16} />}>
+						<Button color="primary" variant="flat" radius="sm" endContent={<TbWorld size={16} />}>
 							ES
 						</Button>
 					</DropdownTrigger>
