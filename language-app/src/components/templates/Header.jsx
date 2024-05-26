@@ -18,9 +18,9 @@ const mockUser = {
 };
 
 const routes = [
-	{ path: '/', name: 'Inicio' },
 	{ path: '/quizz', name: 'Aprender' },
 	{ path: '/bot', name: 'Practicar' },
+    { path: '/comunidad', name: 'Comunidad' },
 ];
 
 const menuItems = [
@@ -46,13 +46,13 @@ function Header() {
 
 			<NavbarContent className="sm:hidden" justify="center">
 				<NavbarBrand>
-					<p className="font-bold text-inherit">Language</p>
+					<Link href='/' className="font-bold text-inherit">Logo</Link>
 				</NavbarBrand>
 			</NavbarContent>
 
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">
 				<NavbarBrand>
-					<p className="font-bold text-inherit">Language</p>
+					<Link href='/'  className="font-bold text-inherit">Logo</Link>
 				</NavbarBrand>
 				{routes.map((route, index) => (
 					<NavbarItem key={index}>
