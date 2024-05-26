@@ -1,7 +1,6 @@
 // src/pages/Bot.jsx
 import React, { useState } from 'react';
 import ChatBot from '../components/ChatBot';
-import Header from '../components/Header';
 import ChatList from '../components/ChatList';
 import FAQSection from '../components/FAQSection';
 import { FaChevronDown } from "react-icons/fa";
@@ -20,7 +19,6 @@ const BotPage = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
-      <Header user={user} />
       <div className="flex flex-1">
         {isChatListOpen && <ChatList />}
         <main className="flex-grow flex flex-col">
@@ -36,7 +34,7 @@ const BotPage = () => {
         onClick={toggleChatList}
       >
         <div className={`transition-all duration-400 ${isChatListOpen ? "rotate-90": "-rotate-90"}`}>
-                        <FaChevronDown size={14} />
+          <FaChevronDown size={14} />
         </div>
       </button>
     </div>
