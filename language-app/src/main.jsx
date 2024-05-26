@@ -12,6 +12,7 @@ import QuizzPage from './pages/Quizz.jsx';
 import TableChallenge from './pages/TableChallenge.jsx';
 import SettingsPage from './pages/Settings.jsx';
 import TestGabrielPage from './pages/TestGabriel.jsx';
+import TestGabrielPage2 from './pages/TestGabriel2.jsx';
 
 import './index.css';
 
@@ -30,8 +31,13 @@ const router = createBrowserRouter([
                 element: <TestGabrielPage />,
             },
             {
+                path: '/test-gabriel2',
+                element: <TestGabrielPage2 />,
+            },
+            {
                 path: ':topic/',
                 element: <TopicPage />,
+
             },
 			{
 				path: '/profile',
