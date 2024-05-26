@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "level": 1,
+        "title": "Nivel ultra basico",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 2,
+        "level": 2,
+        "title": "Dolor Sit",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 3,
+        "level": 3,
+        "title": "Amet Consectetur",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 4,
+        "level": 4,
+        "title": "Adipiscing Elit",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 5,
+        "level": 5,
+        "title": "Sed Do Eiusmod",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 6,
+        "level": 6,
+        "title": "Tempor Incididunt",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 7,
+        "level": 7,
+        "title": "Ut Labore Et",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 8,
+        "level": 8,
+        "title": "Dolore Magna",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 9,
+        "level": 9,
+        "title": "Aliqua Ut Enim",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    },
+    {
+        "id": 10,
+        "level": 10,
+        "title": "Minim Veniam",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+    }
+
+]

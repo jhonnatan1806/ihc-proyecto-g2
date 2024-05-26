@@ -2,52 +2,61 @@
     {
         "id": 1,
         "title": "Viajes",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+        "image": "https://nextui.org/images/hero-card-complete.jpeg",
+        "slug": "viajes"
     },
     {
         "id": 2,
         "title": "Deportes",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+        "image": "https://nextui.org/images/hero-card-complete.jpeg",
+        "slug": "deportes"
     },
     {
         "id": 3,
-        "title": "Comida",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+        "title": "Comida Rapidas",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg",
+        "slug": "comidas-rapidas"
     },
     {
         "id": 4,
-        "title": "Familia",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+        "title": "Familia y Hogar",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg",
+        "slug": "familia-hogar"
     },
     {
         "id": 5,
-        "title": "Trabajo",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+        "title": "Trabajo Remoto",
+        "image": "https://nextui.org/images/hero-card-complete.jpeg",
+        "slug": "trabajo-remoto"
     },
     {
         "id": 6,
         "title": "Estudios",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+        "image": "https://nextui.org/images/hero-card-complete.jpeg",
+        "slug": "estudios"
     },
     {
         "id": 7,
         "title": "Salud",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+        "image": "https://nextui.org/images/hero-card-complete.jpeg",
+        "slug": "salud"
     },
     {
         "id": 8,
         "title": "Dinero",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+        "image": "https://nextui.org/images/hero-card-complete.jpeg",
+        "slug": "dinero"
     },
     {
         "id": 9,
         "title": "Amor",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+        "image": "https://nextui.org/images/hero-card-complete.jpeg",
+        "slug": "amor"
     },
     {
         "id": 10,
         "title": "Amistad",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg"
+        "image": "https://nextui.org/images/hero-card-complete.jpeg",
+        "slug": "amistad"
     }
-
 ]

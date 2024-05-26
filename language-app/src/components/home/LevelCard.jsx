@@ -25,7 +25,7 @@ function LevelCard(props) {
 					<h4 className="font-bold text-lg line-clamp-1">{props?.item.title}</h4>
 					<small className="text-default-500 text-left">{props?.item.description}s</small>
 					<div className="flex flex-col items-center w-full">
-						<Button as={Link} href={`/levels/${props?.item.id}`} color='default' variant="light" endContent={<FaArrowRight />} className="uppercase">
+						<Button as={Link} href={`/${props?.topic}/${props?.item.level}`} color='default' variant="light" endContent={<FaArrowRight />} className="uppercase">
 							Aprende
 						</Button>
 					</div>
