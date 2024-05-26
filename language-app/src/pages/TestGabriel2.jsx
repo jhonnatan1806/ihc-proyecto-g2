@@ -67,17 +67,17 @@ function TestGabrielPage2() {
   };
 
   return (
-    <div className="container mx-auto p-4 bg-gradient-to-r from-blue-100 to-green-100 rounded-lg shadow-lg">
+    <div className="container mx-auto p-4 bg-gradient-to-r from-blue-100 to-gray-100 rounded-lg shadow-lg">
       <TopicLevelHeader topic={tema} level={nivel} />
       <BarraDeProgreso progreso={progreso} />
       <Vidas vidas={vidas} />
       {finalizado ? (
-        <div className="text-center text-green-500 text-2xl font-bold space-y-4">
+        <div className="text-center text-blue-500 text-2xl font-bold space-y-4">
           <p>¡Felicidades! Has completado todos los ejercicios.</p>
           <button className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-700 transition-all">
             Ver Resultados
           </button>
-          <button onClick={reiniciar} className="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-lg shadow-lg hover:bg-yellow-700 transition-all">
+          <button onClick={reiniciar} className="mt-4 px-4 py-2 bg-gray-500 text-white rounded-lg shadow-lg hover:bg-gray-700 transition-all">
             Volver a Intentar
           </button>
         </div>

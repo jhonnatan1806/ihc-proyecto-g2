@@ -15,8 +15,8 @@ function EjercicioVocabulario({ ejercicio, onRespuesta }) {
   };
 
   return (
-    <div className="my-4 p-4 border-2 rounded-lg shadow-lg text-center bg-white border-blue-300">
-      <div className="mb-4 mx-auto p-4 border-2 rounded-lg shadow-inner bg-blue-50 border-blue-300" style={{ maxWidth: '200px', height: '200px' }}>
+    <div className="my-4 p-4 border-2 rounded-lg shadow-lg text-center bg-white border-gray-300">
+      <div className="mb-4 mx-auto p-4 border-2 rounded-lg shadow-inner bg-gray-100 border-gray-300" style={{ maxWidth: '200px', height: '200px' }}>
         {ejercicio.imagen ? (
           <img src={ejercicio.imagen} alt={ejercicio.palabra} className="h-full w-full object-cover rounded-lg" />
         ) : (
@@ -37,7 +37,7 @@ function EjercicioVocabulario({ ejercicio, onRespuesta }) {
                   : opcion === seleccion
                   ? 'bg-red-500 text-white'
                   : 'bg-gray-200 text-gray-700'
-                : 'bg-gradient-to-r from-orange-400 to-pink-500 hover:from-orange-500 hover:to-pink-600 text-white'
+                : 'bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white'
             } text-lg font-semibold`}
             disabled={seleccion}
             style={{

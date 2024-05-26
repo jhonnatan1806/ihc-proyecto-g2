@@ -7,11 +7,10 @@ function BarraDeProgreso({ progreso }) {
       <Progress
         value={progreso}
         max={100}
-        color="gradient"
+        color="primary"
         animated
         shadow
-        striped
-        className="bg-gradient-to-r from-blue-500 to-green-500 rounded-full"
+        className="bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
       />
     </div>
   );
