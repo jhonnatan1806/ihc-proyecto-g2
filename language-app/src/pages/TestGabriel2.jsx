@@ -74,10 +74,10 @@ function TestGabrielPage2() {
       {finalizado ? (
         <div className="text-center text-green-500 text-2xl font-bold space-y-4">
           <p>¡Felicidades! Has completado todos los ejercicios.</p>
-          <button className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-700 transform hover:scale-110 transition-all">
+          <button className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-700 transition-all">
             Ver Resultados
           </button>
-          <button onClick={reiniciar} className="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-lg shadow-lg hover:bg-yellow-700 transform hover:scale-110 transition-all">
+          <button onClick={reiniciar} className="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-lg shadow-lg hover:bg-yellow-700 transition-all">
             Volver a Intentar
           </button>
         </div>
@@ -90,7 +90,7 @@ function TestGabrielPage2() {
         ) : (
           <div className="text-center text-red-500 text-2xl font-bold space-y-4">
             <p>¡Has perdido todas tus vidas!</p>
-            <button onClick={reiniciar} className="px-4 py-2 bg-red-500 text-white rounded-lg shadow-lg hover:bg-red-700 transform hover:scale-110 transition-all">
+            <button onClick={reiniciar} className="px-4 py-2 bg-red-500 text-white rounded-lg shadow-lg hover:bg-red-700 transition-all">
               Volver a Intentar
             </button>
           </div>
