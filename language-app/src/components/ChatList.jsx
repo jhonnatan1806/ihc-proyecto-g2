@@ -33,7 +33,7 @@ const ChatList = () => {
 
   return (
     <aside className="bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-xl shadow-xl max-w-sm relative">
-      <h2 className="text-2xl font-bold mb-4 text-blue-900">Historial de Chats</h2>
+      <h2 className="text-2xl font-bold mb-4 text-blue-900">Chat Bot</h2>
       <ul className="mb-6 relative z-10">
         {chats.map((chat, index) => (
           <li
@@ -99,16 +99,11 @@ const ChatList = () => {
         <ul>
           {['Ayudante', 'Divertido', 'Serio', 'Informativo'].map((personality, index) => (
             <li
-  key={index}
-  className="flex items-center justify-center py-2 px-4 mb-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900 transition-all duration-300 shadow-sm hover:shadow-md transform hover:scale-105 cursor-pointer"
->
-  {personality}
-</li>
-
-
-
-
-
+              key={index}
+              className="flex items-center justify-center py-2 px-4 mb-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900 transition-all duration-300 shadow-sm hover:shadow-md transform hover:scale-105 cursor-pointer"
+            >
+              {personality}
+            </li>
           ))}
         </ul>
       </div>
