@@ -3,7 +3,7 @@ import { Card, CardBody, Image, CardFooter, Link } from '@nextui-org/react';
 
 function TopicCard(props) {
 	return (
-		<Card as={Link} href={`/topics/${props?.item.id}`}>
+		<Card as={Link} href={`/${props?.item.slug}`}>
 			<CardBody className="p-0">
 				<Image
 					alt="Card background"
