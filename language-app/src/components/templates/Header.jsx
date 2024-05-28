@@ -20,13 +20,13 @@ const mockUser = {
 const routes = [
 	{ path: '/quizz', name: 'Aprender' },
 	{ path: '/bot', name: 'Practicar' },
-    { path: '/comunidad', name: 'Comunidad' },
+	{ path: '/comunidad', name: 'Comunidad' },
 ];
 
 const menuItems = [
 	{ name: 'Perfil', path: '/profile' },
 	{ name: 'Actividad', path: '/activity' },
-	{ name: 'Recompensas', path: '/rewards' },
+	{ name: 'Tabla de Desafíos', path: '/table-challenge' },
 	{ name: 'Ajustes', path: '/settings' },
 	{ name: 'Cerrar sesión', path: '/logout' },
 ];
@@ -46,13 +46,17 @@ function Header() {
 
 			<NavbarContent className="sm:hidden" justify="center">
 				<NavbarBrand>
-					<Link href='/' className="font-bold text-inherit">Logo</Link>
+					<Link href="/" className="font-bold text-inherit">
+						Logo
+					</Link>
 				</NavbarBrand>
 			</NavbarContent>
 
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">
 				<NavbarBrand>
-					<Link href='/'  className="font-bold text-inherit">Logo</Link>
+					<Link href="/" className="font-bold text-inherit">
+						Logo
+					</Link>
 				</NavbarBrand>
 				{routes.map((route, index) => (
 					<NavbarItem key={index}>
@@ -75,7 +79,7 @@ function Header() {
 										src: user.avatar,
 										className: 'w-8 h-8',
 									}}
-                                    radius="sm"
+									radius="sm"
 									className="transition-transform hidden md:flex"
 									name={user.name}
 								/>
@@ -121,7 +125,7 @@ function Header() {
 			</NavbarContent>
 
 			<NavbarMenu>
-				{user !== null && (
+				{user !== null ? (
 					<>
 						<User
 							avatarProps={{
@@ -141,10 +145,14 @@ function Header() {
 								</Link>
 							</NavbarMenuItem>
 						))}
-                        <Divider orientation="horizontal" className="my-2" />
+						<Divider orientation="horizontal" className="my-2" />
 					</>
+				) : (
+					<Link as="button" color="primary" radius="sm" onClick={handleLogin}>
+						Acceder
+					</Link>
 				)}
-				
+
 				{routes.map((route, index) => (
 					<NavbarMenuItem key={`${route}-${index}`}>
 						<Link className="w-full" color={index === route.length - 1 ? 'danger' : 'foreground'} href={route.path}>
