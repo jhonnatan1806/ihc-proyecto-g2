@@ -5,13 +5,13 @@ import { NextUIProvider } from '@nextui-org/react';
 
 import Root from './Root';
 import HomePage from './pages/Home.jsx';
-import TopicPage from './pages/Topic.jsx';
+import TopicsPage from './pages/Topics.jsx';
 import BotPage from './pages/Bot.jsx';
 import ProfilePage from './pages/Profile.jsx';
 import QuizzPage from './pages/Quizz.jsx';
 import TableChallenge from './pages/TableChallenge.jsx';
 import SettingsPage from './pages/Settings.jsx';
-import TestGabrielPage from './pages/TestGabriel.jsx';
+import LevelsPage from './pages/Levels.jsx';
 import TestGabrielPage2 from './pages/TestGabriel2.jsx';
 
 import './index.css';
@@ -27,17 +27,17 @@ const router = createBrowserRouter([
 				element: <HomePage />,
 			},
             {
-                path: '/test-gabriel',
-                element: <TestGabrielPage />,
-            },
-            {
                 path: '/test-gabriel2',
                 element: <TestGabrielPage2 />,
             },
             {
                 path: ':topic/',
-                element: <TopicPage />,
+                element: <TopicsPage />,
 
+            },
+            {
+                path: ':topic/:level',
+                element: <LevelsPage />,
             },
 			{
 				path: '/profile',

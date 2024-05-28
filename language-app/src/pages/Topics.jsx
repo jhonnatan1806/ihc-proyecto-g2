@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getTopic } from '../services/dataFeching';
 
-function TopicPage() {
+function TopicsPage() {
     // obtengo el parametro :topic 
     // localhost:3000/deportes -> parametro:deportes
     // localhost:3000/hogar-salud -> parametro:hogar-salud
@@ -29,4 +29,4 @@ function TopicPage() {
     );
 }
 
-export default TopicPage;
+export default TopicsPage;
