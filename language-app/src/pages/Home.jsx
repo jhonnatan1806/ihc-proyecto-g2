@@ -52,7 +52,7 @@ function HomePage() {
 	return (
 		<main className="w-full pb-8">
 			<Hero className="relative z-0 w-full h-[60vh] bg-hero bg-cover bg-center shadow-inner" />
-			<Search className="hidden relative z-20 w-full md:flex items-center" />
+			<Search className="hidden relative z-20 w-full md:flex md:items-center" />
 			<div className='bg-slate-100 py-8 md:mt-24 shadow-inner'>
 				<div className="max-w-screen-lg mx-auto px-6 flex flex-col gap-4">
 					<h2 className="text-2xl font-bold uppercase text-center">Lo Básico</h2>
