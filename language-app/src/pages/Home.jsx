@@ -7,15 +7,17 @@ import { Button, Link } from '@nextui-org/react';
 import { getTopic, getTopics } from '../services/dataFeching'; '../services/dataFeching';
 
 function HomePage() {
+
 	const [topicBasic, setTopicBasic] = React.useState(null)
 	const [topicsPopular, setTopicsPopular] = React.useState(null)
 
     React.useEffect(() => {
         async function fetchData() {
             const responseTopics = await getTopics();
-            setTopicsPopular(responseTopics.slice(0, 4));
             const responseTopicBasic = await getTopic('lo-basico');
-            setTopicBasic(responseTopicBasic.levels.slice(0, 5));
+
+            setTopicsPopular(responseTopics.slice(0, 4));
+            setTopicBasic(responseTopicBasic.levels.slice(0, 3));
         }
         fetchData();
     }, []);
@@ -55,13 +57,13 @@ function HomePage() {
 				<div className="max-w-screen-lg mx-auto px-6 flex flex-col gap-4">
 					<h2 className="text-2xl font-bold uppercase text-center">Lo Básico</h2>
 					<section
-						className="overflow-x-hidden max-w-screen-lg mx-auto px-6 py-2 cursor-grab active:cursor-grabbing select-none"
+						className="overflow-x-hidden max-w-screen-lg mx-auto py-2 cursor-grab active:cursor-grabbing select-none"
 						ref={scrollRef}
 						onMouseDown={handleMouseDown}
 						onMouseLeave={handleMouseLeave}
 						onMouseUp={handleMouseUp}
 						onMouseMove={handleMouseMove}>
-						<div className="grid grid-flow-col gap-6 w-max">
+						<div className="grid grid-cols-3 gap-6 ">
 							{topicBasic && topicBasic.map((item, index) => (
 								<LevelCard key={index} item={item} topic="lo-basico"/>
 							))}

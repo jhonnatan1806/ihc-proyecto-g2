@@ -1,45 +1,200 @@
 {
-    "data":[
+    "data": [
         {
             "id": "1",
             "slug": "lo-basico",
             "title": "Lo básico",
             "image": "https://nextui.org/images/hero-card-complete.jpeg",
-            "levels":[
+            "levels": [
                 {
                     "id": 1,
-                    "level": 1,
                     "title": "Saludos",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 2,
-                    "level": 2,
                     "title": "Despedidas",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 3,
-                    "level": 3,
                     "title": "Presentaciones",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 4,
-                    "level": 4,
                     "title": "Preguntas básicas",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 5,
-                    "level": 5,
                     "title": "Respuestas básicas",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 }
             ]
         },
@@ -48,41 +203,196 @@
             "title": "Viajes",
             "slug": "viajes",
             "image": "https://nextui.org/images/hero-card-complete.jpeg",
-            "levels":[
+            "levels": [
                 {
                     "id": 1,
-                    "level": 1,
                     "title": "Saludos",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 2,
-                    "level": 2,
                     "title": "Despedidas",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 3,
-                    "level": 3,
                     "title": "Presentaciones",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 4,
-                    "level": 4,
                     "title": "Preguntas básicas",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 5,
-                    "level": 5,
                     "title": "Respuestas básicas",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 }
             ]
         },
@@ -91,83 +401,394 @@
             "slug": "citas",
             "title": "Citas",
             "image": "https://nextui.org/images/hero-card-complete.jpeg",
-            "levels":[
+            "levels": [
                 {
                     "id": 1,
-                    "level": 1,
                     "title": "Saludos",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 2,
-                    "level": 2,
                     "title": "Despedidas",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 3,
-                    "level": 3,
                     "title": "Presentaciones",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 4,
-                    "level": 4,
                     "title": "Preguntas básicas",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 5,
-                    "level": 5,
                     "title": "Respuestas básicas",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 }
             ]
-        },{
+        },
+        {
             "id": "4",
             "slug": "negocios",
             "title": "Negocios",
             "image": "https://nextui.org/images/hero-card-complete.jpeg",
-            "levels":[
+            "levels": [
                 {
                     "id": 1,
-                    "level": 1,
                     "title": "Saludos",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 2,
-                    "level": 2,
                     "title": "Despedidas",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 3,
-                    "level": 3,
                     "title": "Presentaciones",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 4,
-                    "level": 4,
                     "title": "Preguntas básicas",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 },
                 {
                     "id": 5,
-                    "level": 5,
                     "title": "Respuestas básicas",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
-                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                    "speaking": [],
+                    "vocabulary": [
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        },
+                        {
+                            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                            "options": [
+                                "Opcion A",
+                                "Opcion B",
+                                "Opcion C"
+                            ],
+                            "right_choice": 0
+                        }
+                    ],
+                    "listening": [],
+                    "reading": []
                 }
             ]
         }
