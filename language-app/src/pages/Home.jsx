@@ -4,13 +4,21 @@ import Search from '../components/home/Search';
 import LevelCard from '../components/home/LevelCard';
 import TopicCard from '../components/home/TopicCard';
 import { Button, Link } from '@nextui-org/react';
-
-import lobasico from '../data/lobasico.json';
-import topics from '../data/topics.json';
+import { getTopic, getTopics } from '../services/dataFeching'; '../services/dataFeching';
 
 function HomePage() {
-	const levelsPopular = lobasico.slice(0, 6);
-	const topicsPopular = topics.slice(0, 4);
+	const [topicBasic, setTopicBasic] = React.useState(null)
+	const [topicsPopular, setTopicsPopular] = React.useState(null)
+
+    React.useEffect(() => {
+        async function fetchData() {
+            const responseTopics = await getTopics();
+            setTopicsPopular(responseTopics.slice(0, 4));
+            const responseTopicBasic = await getTopic('lo-basico');
+            setTopicBasic(responseTopicBasic.levels.slice(0, 5));
+        }
+        fetchData();
+    }, []);
 
 	const scrollRef = React.useRef(null);
 	const [isDown, setIsDown] = React.useState(false);
@@ -54,7 +62,7 @@ function HomePage() {
 						onMouseUp={handleMouseUp}
 						onMouseMove={handleMouseMove}>
 						<div className="grid grid-flow-col gap-6 w-max">
-							{levelsPopular.map((item, index) => (
+							{topicBasic && topicBasic.map((item, index) => (
 								<LevelCard key={index} item={item} topic="lo-basico"/>
 							))}
 						</div>
@@ -70,7 +78,7 @@ function HomePage() {
 				<div className="flex flex-col gap-4 w-full md:w-1/2">
 					<h1 className="text-2xl font-bold uppercase text-center">Temas populares</h1>
 					<div className="grid grid-cols-2 gap-4">
-						{topicsPopular.map((item, index) => (
+						{topicsPopular && topicsPopular.map((item, index) => (
 							<TopicCard key={index} item={item} />
 						))}
 					</div>

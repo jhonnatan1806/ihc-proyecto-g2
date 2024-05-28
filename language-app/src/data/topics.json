@@ -1,62 +1,175 @@
-[
-    {
-        "id": 1,
-        "title": "Viajes",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg",
-        "slug": "viajes"
-    },
-    {
-        "id": 2,
-        "title": "Deportes",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg",
-        "slug": "deportes"
-    },
-    {
-        "id": 3,
-        "title": "Comida Rapidas",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg",
-        "slug": "comidas-rapidas"
-    },
-    {
-        "id": 4,
-        "title": "Familia y Hogar",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg",
-        "slug": "familia-hogar"
-    },
-    {
-        "id": 5,
-        "title": "Trabajo Remoto",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg",
-        "slug": "trabajo-remoto"
-    },
-    {
-        "id": 6,
-        "title": "Estudios",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg",
-        "slug": "estudios"
-    },
-    {
-        "id": 7,
-        "title": "Salud",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg",
-        "slug": "salud"
-    },
-    {
-        "id": 8,
-        "title": "Dinero",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg",
-        "slug": "dinero"
-    },
-    {
-        "id": 9,
-        "title": "Amor",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg",
-        "slug": "amor"
-    },
-    {
-        "id": 10,
-        "title": "Amistad",
-        "image": "https://nextui.org/images/hero-card-complete.jpeg",
-        "slug": "amistad"
-    }
-]
+{
+    "data":[
+        {
+            "id": "1",
+            "slug": "lo-basico",
+            "title": "Lo básico",
+            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+            "levels":[
+                {
+                    "id": 1,
+                    "level": 1,
+                    "title": "Saludos",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 2,
+                    "level": 2,
+                    "title": "Despedidas",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 3,
+                    "level": 3,
+                    "title": "Presentaciones",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 4,
+                    "level": 4,
+                    "title": "Preguntas básicas",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 5,
+                    "level": 5,
+                    "title": "Respuestas básicas",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Viajes",
+            "slug": "viajes",
+            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+            "levels":[
+                {
+                    "id": 1,
+                    "level": 1,
+                    "title": "Saludos",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 2,
+                    "level": 2,
+                    "title": "Despedidas",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 3,
+                    "level": 3,
+                    "title": "Presentaciones",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 4,
+                    "level": 4,
+                    "title": "Preguntas básicas",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 5,
+                    "level": 5,
+                    "title": "Respuestas básicas",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "slug": "citas",
+            "title": "Citas",
+            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+            "levels":[
+                {
+                    "id": 1,
+                    "level": 1,
+                    "title": "Saludos",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 2,
+                    "level": 2,
+                    "title": "Despedidas",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 3,
+                    "level": 3,
+                    "title": "Presentaciones",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 4,
+                    "level": 4,
+                    "title": "Preguntas básicas",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 5,
+                    "level": 5,
+                    "title": "Respuestas básicas",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                }
+            ]
+        },{
+            "id": "4",
+            "slug": "negocios",
+            "title": "Negocios",
+            "image": "https://nextui.org/images/hero-card-complete.jpeg",
+            "levels":[
+                {
+                    "id": 1,
+                    "level": 1,
+                    "title": "Saludos",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 2,
+                    "level": 2,
+                    "title": "Despedidas",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 3,
+                    "level": 3,
+                    "title": "Presentaciones",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 4,
+                    "level": 4,
+                    "title": "Preguntas básicas",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                },
+                {
+                    "id": 5,
+                    "level": 5,
+                    "title": "Respuestas básicas",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
+                    "image": "https://nextui.org/images/hero-card-complete.jpeg"
+                }
+            ]
+        }
+    ]
+}

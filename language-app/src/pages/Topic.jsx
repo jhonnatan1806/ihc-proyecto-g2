@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getTopic } from '../services/topicFeching';
+import { getTopic } from '../services/dataFeching';
 
 function TopicPage() {
     // obtengo el parametro :topic 
@@ -9,7 +9,7 @@ function TopicPage() {
     const params = useParams();
 
     // estados en react
-    const [topic, setTopic] = useState(null);
+    const [topic, setTopic] = useState([]);
     
     // primer render sin dependencias
     useEffect(() => {
@@ -24,7 +24,7 @@ function TopicPage() {
     // params.topic;
 	return (
         <div>
-            TopicPage con parametro {topic && topic[0].title}
+            TopicPage con parametro {topic && topic.title}
         </div>
     );
 }
