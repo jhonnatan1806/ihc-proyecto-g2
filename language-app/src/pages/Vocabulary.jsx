@@ -34,7 +34,6 @@ function VocabularyPage() {
 		if (!isCorrect) {
 			setVidas(lifes - 1); // Decrementa una vida por cada respuesta incorrecta
 		}
-
 		if (exerciseIndex < vocabulary.length - 1) {
 			setExcerciseIndex(exerciseIndex + 1);
 		} else {
@@ -50,21 +49,23 @@ function VocabularyPage() {
 	};
 
 	return (
-		<div className="container mx-auto p-4 bg-gradient-to-r from-blue-100 to-gray-100 rounded-lg shadow-lg">
+		<div className="max-w-screen-lg mx-auto my-6 px-6 py-4 bg-gradient-to-r from-blue-100 to-gray-100 rounded-lg shadow-lg">
 			<TopicLevelHeader title={topic && topic.title} level={level && level.id} />
 			<BarraDeProgreso progreso={progreso} />
 			<Vidas vidas={lifes} />
 			{finish ? (
 				<div className="text-center text-blue-500 text-2xl font-bold space-y-4">
 					<p>¡Felicidades! Has completado todos los ejercicios.</p>
+                    <div className='flex items-center justify-center gap-4 mt-2'>
 					<button className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-700 transition-all">
 						Ver Resultados
 					</button>
 					<button
 						onClick={reset}
-						className="mt-4 px-4 py-2 bg-gray-500 text-white rounded-lg shadow-lg hover:bg-gray-700 transition-all">
+						className="px-4 py-2 bg-gray-500 text-white rounded-lg shadow-lg hover:bg-gray-700 transition-all">
 						Volver a Intentar
 					</button>
+                    </div>
 				</div>
 			) : lifes > 0 ? (
 				<EjercicioVocabulario excercice={vocabulary && vocabulary[exerciseIndex]} onResponse={handleResponse} />
