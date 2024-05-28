@@ -14,31 +14,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta 1",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta 2",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 1
                         },
                         {
+                            "ask": "Pregunta 3",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 2
                         }
                     ],
                     "listening": [],
@@ -52,31 +55,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -90,31 +96,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -128,31 +137,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -166,31 +178,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -212,31 +227,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -250,31 +268,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -288,31 +309,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -326,31 +350,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -364,31 +391,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -403,6 +433,7 @@
             "image": "https://nextui.org/images/hero-card-complete.jpeg",
             "levels": [
                 {
+                    "ask": "Pregunta",
                     "id": 1,
                     "title": "Saludos",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh ut enim tincidunt eleifend.",
@@ -410,31 +441,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -448,13 +482,14 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
@@ -463,16 +498,17 @@
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -486,31 +522,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -524,31 +563,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -562,31 +604,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -608,31 +653,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -646,31 +694,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -684,31 +735,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -722,31 +776,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
@@ -760,31 +817,34 @@
                     "speaking": [],
                     "vocabulary": [
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         },
                         {
+                            "ask": "Pregunta",
                             "image": "https://nextui.org/images/hero-card-complete.jpeg",
                             "options": [
                                 "Opcion A",
                                 "Opcion B",
                                 "Opcion C"
                             ],
-                            "right_choice": 0
+                            "answer": 0
                         }
                     ],
                     "listening": [],
