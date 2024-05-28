@@ -52,8 +52,8 @@ function HomePage() {
 	return (
 		<main className="w-full pb-8">
 			<Hero className="relative z-0 w-full h-[60vh] bg-hero bg-cover bg-center shadow-inner" />
-			<Search className="relative z-20 w-full flex items-center" />
-			<div className='bg-slate-100 py-8 mt-24 shadow-inner'>
+			<Search className="hidden relative z-20 w-full md:flex items-center" />
+			<div className='bg-slate-100 py-8 md:mt-24 shadow-inner'>
 				<div className="max-w-screen-lg mx-auto px-6 flex flex-col gap-4">
 					<h2 className="text-2xl font-bold uppercase text-center">Lo Básico</h2>
 					<section
@@ -63,7 +63,7 @@ function HomePage() {
 						onMouseLeave={handleMouseLeave}
 						onMouseUp={handleMouseUp}
 						onMouseMove={handleMouseMove}>
-						<div className="grid grid-cols-3 gap-6 ">
+						<div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
 							{topicBasic && topicBasic.map((item, index) => (
 								<LevelCard key={index} item={item} topic="lo-basico"/>
 							))}
