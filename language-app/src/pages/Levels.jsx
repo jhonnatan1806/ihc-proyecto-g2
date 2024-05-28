@@ -40,7 +40,7 @@ function LevelsPage() {
 	}
     
 	return (
-		<div className="max-w-screen-lg mx-auto px-6 py-4 h-screen flex flex-col justify-between gap-4">
+		<div className="max-w-screen-lg mx-auto px-6 py-4 flex flex-col justify-between gap-4">
 			<BreadCrumbs items={routesBreacrumbs} />
 			{topic && <TopicLevelHeader topic={topic?.title} level={topic?.levels[params.level - 1].id} />}
 			<div className="flex-grow">

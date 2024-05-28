@@ -50,7 +50,7 @@ function HomePage() {
 	};
 
 	return (
-		<main className="w-full">
+		<main className="w-full pb-8">
 			<Hero className="relative z-0 w-full h-[60vh] bg-hero bg-cover bg-center shadow-inner" />
 			<Search className="relative z-20 w-full flex items-center" />
 			<div className='bg-slate-100 py-8 mt-24 shadow-inner'>
