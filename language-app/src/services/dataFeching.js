@@ -6,12 +6,12 @@ export async function getTopics() {
     return data;
 }
 
-export async function getTopic(slug) {
+export async function getTopic(topic) {
     const response = topics;
     const data = response.data;
     
     for(let i = 0; i < data.length; i++) {
-        if(data[i].slug === slug) {
+        if(data[i].slug === topic) {
             return data[i];
         }
     }

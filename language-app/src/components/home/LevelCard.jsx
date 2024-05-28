@@ -5,12 +5,11 @@ import { Link } from '@nextui-org/link';
 
 function LevelCard(props) {
 	return (
-		<div className="flex flex-col">
+		<Link href={`/${props?.topic}/${props?.item.id}`} className="flex flex-col items-start">
 			<Button color="primary" className="w-fit rounded-none rounded-t-lg px-8 py-4">
-				Nivel {props?.item.level}
+				Nivel {props?.item.id}
 			</Button>
-			<Card
-				className="select-none flex flex-col items-center p-0 rounded-none rounded-tr-lg rounded-b-lg h-full bg-white">
+			<Card className="select-none flex flex-col items-center p-0 rounded-none rounded-tr-lg rounded-b-lg h-full bg-white">
 				<CardBody className="overflow-visible">
 					<Image
 						alt="Card background"
@@ -25,13 +24,13 @@ function LevelCard(props) {
 					<h4 className="font-bold text-lg line-clamp-1">{props?.item.title}</h4>
 					<small className="text-default-500 text-left">{props?.item.description}s</small>
 					<div className="flex flex-col items-center w-full">
-						<Button as={Link} href={`/${props?.topic}/${props?.item.level}`} color='default' variant="light" endContent={<FaArrowRight />} className="uppercase">
+						<Button color="default" variant="light" endContent={<FaArrowRight />} className="uppercase">
 							Aprende
 						</Button>
 					</div>
 				</CardFooter>
 			</Card>
-		</div>
+		</Link>
 	);
 }
 
