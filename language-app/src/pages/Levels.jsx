@@ -40,9 +40,10 @@ function LevelsPage() {
 	}
     
 	return (
-		<div className="max-w-screen-lg mx-auto px-6 py-4 flex flex-col justify-between gap-4">
+		<div className="max-w-screen-lg mx-auto px-6 py-8 flex flex-col justify-between gap-4">
 			<BreadCrumbs items={routesBreacrumbs} />
 			{topic && <TopicLevelHeader topic={topic?.title} level={topic?.levels[params.level - 1].id} />}
+            <h1 className='font-bold text-2xl md:text-4xl mb-2'>Expande tu conocimiento en:</h1>
 			<div className="flex-grow">
 				<LearningOptionsGrid />
 			</div>
