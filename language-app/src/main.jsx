@@ -15,7 +15,7 @@ import TableChallenge from './pages/TableChallenge.jsx';
 import SettingsPage from './pages/Settings.jsx';
 
 import TestGabrielPage2 from './pages/TestGabriel2.jsx';
-
+import TestGabrielPage3 from './pages/TestGabriel3.jsx';
 import './index.css';
 
 
@@ -64,6 +64,10 @@ const router = createBrowserRouter([
 			{
 				path: '/settings',
 				element: <SettingsPage/>
+			},
+			{
+				path: '/test-gabriel3',
+				element: <TestGabrielPage3/>
 			}
 		],
 	},
