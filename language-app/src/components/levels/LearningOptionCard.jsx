@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card, Button } from '@nextui-org/react';
+import { Card, Button, Link } from '@nextui-org/react';
 
-function LearningOptionCard({ title, description, Icon }) {
+function LearningOptionCard({ title, description, Icon, href }) {
 	return (
 		<Card className="w-full p-4 text-center flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg min-h-72">
 			<div className="flex flex-col items-center">
@@ -11,8 +11,8 @@ function LearningOptionCard({ title, description, Icon }) {
 				<h2 className="text-lg font-semibold mb-2">{title}</h2>
 				<p className="text-gray-500 mb-4 text-center">{description}</p>
 			</div>
-			<Button shadow color="primary" auto>
-				Start {title}
+			<Button as={Link} href={href} color="primary" auto >
+				Practica tu {title}
 			</Button>
 		</Card>
 	);
