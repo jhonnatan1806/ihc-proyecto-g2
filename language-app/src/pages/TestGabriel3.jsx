@@ -40,15 +40,6 @@ function TestGabrielPage3() {
       <div className='w-full max-w-5xl mb-5'>
         <TopicLevelHeader topic={topic} level={level} />
       </div>
-      <div className="w-full max-w-5xl mb-4 flex justify-between items-center">
-        
-        <button 
-          className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded"
-          onClick={toggleShowPhraseList}
-        >
-          {showPhraseList ? 'Ocultar Lista de Frases' : 'Mostrar Lista de Frases'}
-        </button>
-      </div>
       <div className="flex-grow flex flex-row items-start justify-between w-full max-w-5xl">
         {showPhraseList && (
           <PhraseList

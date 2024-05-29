@@ -1,9 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, Button, Progress } from '@nextui-org/react';
 import { FaPlay, FaRedo } from 'react-icons/fa';
 
 function PhrasePlayer({ phrasePortuguese, phraseSpanish, onPlay, onRepeat }) {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    let interval;
+    if (isPlaying) {
+      interval = setInterval(() => {
+        setValue((v) => (v >= 100 ? 0 : v + 10));
+      }, 300); // Incrementa el progreso cada 300ms
+    } else {
+      setValue(0);
+    }
+
+    return () => clearInterval(interval);
+  }, [isPlaying]);
 
   const handlePlay = () => {
     setIsPlaying(true);
@@ -22,7 +36,14 @@ function PhrasePlayer({ phrasePortuguese, phraseSpanish, onPlay, onRepeat }) {
       <h2 className="text-blue-800 mb-2 text-3xl font-semibold">{phrasePortuguese}</h2>
       <h3 className="text-gray-600 mb-4 text-lg">{phraseSpanish}</h3>
       <div className="flex justify-center items-center mb-4">
-        <Progress value={isPlaying ? 100 : 0} max={100} animated={isPlaying ? "true" : "false"} />
+        <Progress
+          aria-label="Progreso de reproducción"
+          size="md"
+          value={value}
+          color="success"
+          showValueLabel={true}
+          className="max-w-md"
+        />
       </div>
       <div>
         <Button
