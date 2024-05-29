@@ -22,7 +22,7 @@ function LevelCard(props) {
 				</CardBody>
 				<CardFooter className="flex flex-col gap-1 items-start max-w-80 pt-0">
 					<h4 className="font-bold text-lg line-clamp-1">{props?.item.title}</h4>
-					<small className="text-default-500 text-left">{props?.item.description}s</small>
+					<small className="text-default-500 text-left line-clamp-2">{props?.item.description}s</small>
 					<div className="flex flex-col items-center w-full">
 						<Button color="default" variant="light" endContent={<FaArrowRight />} className="uppercase">
 							Aprende

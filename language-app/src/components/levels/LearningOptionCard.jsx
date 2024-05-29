@@ -11,7 +11,7 @@ function LearningOptionCard({ title, description, Icon, href }) {
 				<h2 className="text-lg font-semibold mb-2">{title}</h2>
 				<p className="text-gray-500 mb-4 text-center">{description}</p>
 			</div>
-			<Button as={Link} href={href} color="primary" auto >
+			<Button as={Link} href={href} color="primary" >
 				Practica tu {title}
 			</Button>
 		</Card>
