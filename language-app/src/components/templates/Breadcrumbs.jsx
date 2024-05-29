@@ -6,7 +6,7 @@ function BreadCrumbs(props) {
 	return (
 		<Breadcrumbs variant="solid">
 			{props.items.map((item, index) => {
-				path += item.url;
+				path += index > 1 ? '/' + item.url: item.url;
 				return (
 					<BreadcrumbItem key={index} href={path}>
 						{item.title}
