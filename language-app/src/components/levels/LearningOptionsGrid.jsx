@@ -5,26 +5,26 @@ import { FaMicrophone, FaBook, FaHeadphones, FaBookReader } from 'react-icons/fa
 function LearningOptionsGrid(props) {
 	const options = [
 		{
-			title: 'Hablado',
-			description: 'Improve your pronunciation and speaking skills.',
+			title: 'Pronunciación',
+			description: 'Mejora tu pronunciación con ejercicios de habla.',
 			Icon: FaMicrophone,
 			path: 'speaking',
 		},
 		{
 			title: 'Vocabulario',
-			description: 'Expand your Portuguese vocabulary with new words.',
+			description: 'Expande tu vocabulario con ejercicios de palabras.',
 			Icon: FaBook,
 			path: 'vocabulary',
 		},
 		{
 			title: 'Escucha',
-			description: 'Enhance your listening skills with exercises.',
+			description: 'Practica la comprensión auditiva con audios.',
 			Icon: FaHeadphones,
 			path: 'listening',
 		},
 		{
 			title: 'Lectura',
-			description: 'Practice reading comprehension with texts.',
+			description: 'Practica la lectura con textos y ejercicios.',
 			Icon: FaBookReader,
 			path: 'reading',
 		},
