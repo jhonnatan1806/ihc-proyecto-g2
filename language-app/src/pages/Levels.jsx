@@ -5,7 +5,6 @@ import LearningOptionsGrid from '../components/levels/LearningOptionsGrid';
 import { getTopic } from '../services/dataFeching';
 import BreadCrumbs from '../components/templates/Breadcrumbs';
 
-
 function LevelsPage() {
 	const params = useParams();
 	const [topic, setTopicLevel] = React.useState(null);
@@ -18,32 +17,37 @@ function LevelsPage() {
 		fetchData();
 	}, [params.topic]);
 
-    const routesBreacrumbs = [
-        {
-            title: 'Inicio',
-            url: '/',
-        },
-        {
-            title: topic?.title,
-            url: topic?.slug,
-        },
-        {
-            title: topic?.levels[params.level - 1].title,
-            url: topic?.levels[params.level - 1].id,
-        },
-    ];   
+	const routesBreacrumbs = [
+		{
+			title: 'Inicio',
+			url: '/',
+		},
+		{
+			title: topic?.title,
+			url: topic?.slug,
+		},
+		{
+			title: topic?.levels[params.level - 1].title,
+			url: topic?.levels[params.level - 1].id,
+		},
+	];
 
-
-	if (!topic || !topic.levels[params.level - 1]) {
+	/*if (!topic || !topic.levels[params.level - 1]) {
 		// renderizar 404
 		return <div>404</div>;
-	}
-    
+	}*/
+
 	return (
 		<div className="max-w-screen-lg mx-auto px-6 py-8 flex flex-col justify-between gap-4">
 			<BreadCrumbs items={routesBreacrumbs} />
-			{topic && <TopicLevelHeader title={topic.title} level={topic.levels[params.level - 1].id} />}
-            <h1 className='font-bold text-2xl md:text-4xl mb-2'>Expande tu conocimiento en:</h1>
+			{topic && (
+				<TopicLevelHeader
+					title={topic.levels[params.level - 1].title}
+					description={topic.levels[params.level - 1].description}
+					level={topic.levels[params.level - 1].id}
+				/>
+			)}
+			<h1 className="font-bold text-2xl md:text-4xl mb-2">Expande tu conocimiento en:</h1>
 			<div className="flex-grow">
 				<LearningOptionsGrid topic={topic?.slug} level={params.level} />
 			</div>
