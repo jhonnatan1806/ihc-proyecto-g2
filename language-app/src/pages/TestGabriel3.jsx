@@ -14,6 +14,7 @@ function TestGabrielPage3() {
 	const [phrase, setPhrase] = useState(initialPhrase);
 	const [showPhraseList, setShowPhraseList] = useState(true);
 
+
 	const handleRecord = (recording) => {
 		setIsRecording(recording);
 	};
@@ -31,9 +32,11 @@ function TestGabrielPage3() {
 		setIsRecording(false);
 	};
 
+
 	const toggleShowPhraseList = () => {
 		setShowPhraseList(!showPhraseList);
 	};
+
 
 	return (
 		<div className="container mx-auto p-4 max-h-5xpl flex flex-col items-center">

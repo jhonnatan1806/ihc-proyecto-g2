@@ -19,6 +19,8 @@ import SettingsPage from './pages/Settings.jsx';
 
 import TestGabrielPage2 from './pages/TestGabriel2.jsx';
 import TestGabrielPage3 from './pages/TestGabriel3.jsx';
+import Resultados from './pages/Resultados.jsx';
+
 import './index.css';
 
 
@@ -75,6 +77,10 @@ const router = createBrowserRouter([
 			{
 				path: '/test-gabriel3',
 				element: <TestGabrielPage3/>
+			},
+			{
+				path: '/resultados',
+				element: <Resultados/>
 			}
 		],
 	},
