@@ -7,7 +7,10 @@ import Root from './Root';
 import HomePage from './pages/Home.jsx';
 import TopicsPage from './pages/Topics.jsx';
 import LevelsPage from './pages/Levels.jsx';
+
+import SpeakingPage from './pages/Speaking.jsx';
 import VocabularyPage from './pages/Vocabulary.jsx'; 
+
 import BotPage from './pages/Bot.jsx';
 import ProfilePage from './pages/Profile.jsx';
 import QuizzPage from './pages/Quizz.jsx';
@@ -40,6 +43,10 @@ const router = createBrowserRouter([
             {
                 path: ':topic/:level',
                 element: <LevelsPage />,
+            },
+            {
+                path: ':topic/:level/speaking',
+                element: <SpeakingPage />,
             },
             {
                 path: ':topic/:level/vocabulary',
