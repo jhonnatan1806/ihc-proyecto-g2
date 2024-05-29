@@ -31,6 +31,14 @@ const menuItems = [
 	{ name: 'Cerrar sesión', path: '/logout' },
 ];
 
+function Logo() {
+	return (
+		<Link href="/" className="font-bold text-inherit">
+			<img src="/images/logo.png" alt="Logo" className="w-10 h-10 md:w-16 md:h-16" />
+		</Link>
+	);
+}
+
 function Header() {
 	const [user, setUser] = React.useState(null);
 
@@ -39,24 +47,20 @@ function Header() {
 	};
 
 	return (
-		<Navbar disableAnimation isBordered className="sticky inset-0 z-50 backdrop-blur-md bg-white/75">
+		<Navbar disableAnimation isBordered className="sticky inset-0 z-50 backdrop-blur-md bg-white/75 py-2">
 			<NavbarContent className="sm:hidden" justify="start">
 				<NavbarMenuToggle />
 			</NavbarContent>
 
 			<NavbarContent className="sm:hidden" justify="center">
 				<NavbarBrand>
-					<Link href="/" className="font-bold text-inherit">
-						Logo
-					</Link>
+					<Logo />
 				</NavbarBrand>
 			</NavbarContent>
 
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">
 				<NavbarBrand>
-					<Link href="/" className="font-bold text-inherit">
-						Logo
-					</Link>
+					<Logo />
 				</NavbarBrand>
 				{routes.map((route, index) => (
 					<NavbarItem key={index}>
