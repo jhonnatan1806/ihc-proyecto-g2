@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import PageHeader from '../components/PageHeader';
-import UserTable from '../components/UserTable';
-import FilterOptions from '../components/FilterOptions';
-import Statistics from '../components/Statistics';
-import TopFiveTable from '../components/TopFiveTable';
+import PageHeader from '../components/challenges/PageHeader';
+import UserTable from '../components/challenges/UserTable';
+import FilterOptions from '../components/challenges/FilterOptions';
+import Statistics from '../components/challenges/Statistics';
+import TopFiveTable from '../components/challenges/TopFiveTable';
 
 const TableChallenge = () => {
 	const initialUsers = [

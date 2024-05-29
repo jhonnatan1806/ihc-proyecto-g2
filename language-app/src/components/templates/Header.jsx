@@ -33,7 +33,7 @@ const menuItems = [
 
 function Logo() {
 	return (
-		<Link href="/" className="font-bold text-inherit">
+		<Link href="/" className="font-bold text-inherit drop-shadow-md">
 			<img src="/images/logo.png" alt="Logo" className="w-10 h-10 md:w-16 md:h-16" />
 		</Link>
 	);
