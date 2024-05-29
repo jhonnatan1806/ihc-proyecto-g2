@@ -1,76 +1,79 @@
 ul {
-  list-style-type: none;
-  padding-left: 0;
+	list-style-type: none;
+	padding-left: 0;
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
 
+.logo {
+	width: 200px;
+	height: 200px;
 }
 
 .text-center {
-  text-align: center;
+	text-align: center;
 }
 
 .grid {
-  display: grid;
+	display: grid;
 }
 
 .grid-cols-3 {
-  grid-template-columns: repeat(1, 1fr);
+	grid-template-columns: repeat(1, 1fr);
 }
 
 .grid-cols-3 {
-  grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 }
 
-.flex-row{
-  display: flex;
-  flex-direction: row;
+.flex-row {
+	display: flex;
+	flex-direction: row;
 }
 
-.flex-col{
-  display: flex;
-  flex-direction: column;
+.flex-col {
+	display: flex;
+	flex-direction: column;
 }
 
 .flex-wrap {
-  flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .place-items-stretch {
-  place-items: stretch;
+	place-items: stretch;
 }
 
 .place-items-center {
-  place-items: center;
+	place-items: center;
 }
 
 .justify-center {
-  justify-content: center;
+	justify-content: center;
 }
 
 .items-center {
-  align-items: center;
+	align-items: center;
 }
 
 .gap-2 {
-  gap: 0.5rem;
+	gap: 0.5rem;
 }
 
 .gap-4 {
-  gap: 1rem;
+	gap: 1rem;
 }
 
-
 .rounded-full {
-  border-radius: 9999px;
+	border-radius: 9999px;
 }
 
 .abstract-text {
-  font-size: 16px; 
-  color: #333; 
-  margin-top: 10px; 
-  text-align: justify; 
+	font-size: 16px;
+	color: #333;
+	margin-top: 10px;
+	text-align: justify;
 }

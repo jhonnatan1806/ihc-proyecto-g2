@@ -3,50 +3,60 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Mi aplicación React</title>
-    <link rel="stylesheet" href="./css/jhonnatan.styles.css" />
-    <link rel="stylesheet" href="./css/gabriel.style.css" />
-    <!-- Estilos de Water.css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+		<title>Language App Entregables</title>
+        <!-- Favicon -->
+        <link rel="icon" href="./favicon.ico" />
+        <!-- Estilos propios CSS -->
+		<link rel="stylesheet" href="./css/jhonnatan.styles.css" />
+		<link rel="stylesheet" href="./css/gabriel.style.css" />
+		<!-- Estilos de Water.css -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
 	</head>
 	<body>
 		<div id="root"></div>
-    <!-- React y ReactDom -->
-    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+		<!-- React y ReactDom -->
+		<script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
 		<script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
-    <!-- Babel -->
+		<!-- Babel -->
 		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <!-- Modelo de datos -->
-    <script src="./js/model.js"></script>
-    <!-- Componente principal -->
+		<!-- Modelo de datos -->
+		<script src="./js/model.js"></script>
+		<!-- Componente principal -->
 		<script type="text/babel">
+			// Componente principal
+			const App = () => {
+				return (
+					<React.Fragment>
+						<Abstract />
+						<Teams />
+						<Deliverable />
+					</React.Fragment>
+				);
+			};
 
-      // Componente principal
-      const App = () => {
-        return (
-          <React.Fragment>
-            <Abstract />
-            <Teams />
-            <Deliverable />
-          </React.Fragment>
-        );
-      };
+			const projectInfo = { name: 'ihc-proyecto-g2' };
 
-      const projectInfo = {name:"ihc-proyecto-g2"};
+			// Componente del resumen
+			const Abstract = () => {
+				return (
+					<section className="flex flex-col gap-4 items-center">
+						<h1 className="text-center">Resumen</h1>
+                        <img src="./img/logo.png" alt="Logo" className="logo" />
+						<p className="abstract-text">
+							En el mundo actual, donde las barreras físicas han sido eliminadas por internet, nuestra aplicación ofrece
+							una plataforma sencilla para aprender español y portugués, dirigida a quienes necesitan comunicarse
+							globalmente por motivos de trabajo, estudio o simplemente por interés personal. Con actividades
+							gramaticales y prácticas lingüísticas que llevan al usuario desde el nivel básico hasta avanzado, nuestra
+							app también integra inteligencia artificial para proporcionar un apoyo constante y personalizado,
+							garantizando una experiencia de aprendizaje completa y efectiva.{' '}
+						</p>
+					</section>
+				);
+			};
 
-      // Componente del resumen
-      const Abstract = () => {
-        return (
-          <section>
-            <h1 className="text-center">Resumen</h1>
-            <p className="abstract-text">En el mundo actual, donde las barreras físicas han sido eliminadas por internet, nuestra aplicación ofrece una plataforma sencilla para aprender español y portugués, dirigida a quienes necesitan comunicarse globalmente por motivos de trabajo, estudio o simplemente por interés personal. Con actividades gramaticales y prácticas lingüísticas que llevan al usuario desde el nivel básico hasta avanzado, nuestra app también integra inteligencia artificial para proporcionar un apoyo constante y personalizado, garantizando una experiencia de aprendizaje completa y efectiva. </p>
-          </section>
-        );
-      };
-
-      // Componente de los miembros del equipo
-      const teams = teamData.getTeams();
+			// Componente de los miembros del equipo
+			const teams = teamData.getTeams();
 			const Teams = () => {
 				return (
 					<section>
@@ -54,18 +64,18 @@
 						<ul className="grid grid-cols-3 place-items-stretch">
 							{teams.map((member) => (
 								<li key={member.id} className="flex-col items-center gap-2">
-                  <img width="100" src={member.avatar} alt={member.name} className="rounded-full"/>
+									<img width="100" src={member.avatar} alt={member.name} className="rounded-full" />
 									<p>{member.name}</p>
-                  <p>{member.role}</p>
-                  <ul className="flex-row gap-4">
-                    {member.socials.map((social) => (
-                      <li key={social.id}>
-                        <a href={social.url} target="_blank" rel="noreferrer noopener nofollow" title={social.name}>
-                          <img src={`./img/brand-${social.name.toLowerCase()}.svg`} alt={social.name} />
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+									<p>{member.role}</p>
+									<ul className="flex-row gap-4">
+										{member.socials.map((social) => (
+											<li key={social.id}>
+												<a href={social.url} target="_blank" rel="noreferrer noopener nofollow" title={social.name}>
+													<img src={`./img/brand-${social.name.toLowerCase()}.svg`} alt={social.name} />
+												</a>
+											</li>
+										))}
+									</ul>
 								</li>
 							))}
 						</ul>
@@ -73,39 +83,51 @@
 				);
 			};
 
-      
-      // Componente de la sección de entregables
-      const Deliverable = () => {
-      return (
-        <section className="deliverables-section">
-          <h1 className="section-title">Entregables</h1>
-          <div className="deliverables-list">
-            <div className="deliverable-item">
-              <a href="./assets/entregable-0.pdf" download className="download-link">
-                <span>Descargar Entregable 0</span>
-                <img src="./img/download.svg" alt="Download Icon" className="download-icon" />
-              </a>
-            </div>
-            <div className="deliverable-item">
-              <a href="./assets/Entregable-1-Parte1.pdf" download className="download-link">
-                <span>Descargar Entregable 1 (Parte 1)</span>
-                <img src="./img/download.svg" alt="Download Icon" className="download-icon" />
-              </a>
-            </div>
-            <div className="deliverable-item">
-              <a href="./assets/Entregable-1-Parte2.pdf" download className="download-link">
-                <span>Descargar Entregable 1 (Parte2)</span>
-                <img src="./img/download.svg" alt="Download Icon" className="download-icon" />
-              </a>
-            </div>
-            {/* Agrega más elementos de entregables si es necesario */}
-          </div>
-        </section>
-      );
-    };
+            const entregrables = [
+                {
+                    id: 0,
+                    name: 'Entregable 0',
+                    url: './assets/entregable-0.pdf',
+                },
+                {
+                    id: 1,
+                    name: 'Entregable 1 (Parte 1)',
+                    url: './assets/Entregable-1-Parte1.pdf',
+                },
+                {
+                    id: 2,
+                    name: 'Entregable 1 (Parte 2)',
+                    url: './assets/Entregable-1-Parte2.pdf',
+                },
+                {
+                    id: 3,
+                    name: 'Entregable 3',
+                    url: './assets/Entregable-3.pdf',
+                },
+            ]
 
+			// Componente de la sección de entregables
+			const Deliverable = () => {
+				return (
+					<section className="deliverables-section">
+						<h1 className="section-title">Entregables</h1>
+						<div className="deliverables-list">
+							{
+                                entregrables.map((entregable) => (
+                                    <div key={entregable.id} className="deliverable-item">
+                                        <a href={entregable.url} download className="download-link">
+                                            <span>Descargar {entregable.name}</span>
+                                            <img src="./img/download.svg" alt="Download Icon" className="download-icon" />
+                                        </a>
+                                    </div>
+                                ))
+                            }
+						</div>
+					</section>
+				);
+			};
 
-      // Renderizar la aplicación
+			// Renderizar la aplicación
 			ReactDOM.render(<App />, document.getElementById('root'));
 		</script>
 	</body>
