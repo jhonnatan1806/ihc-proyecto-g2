@@ -10,6 +10,8 @@ import LevelsPage from './pages/Levels.jsx';
 
 import SpeakingPage from './pages/Speaking.jsx';
 import VocabularyPage from './pages/Vocabulary.jsx'; 
+import ListeningPage from './pages/Listening.jsx';
+import ResultsPage from './pages/Results.jsx';
 
 import BotPage from './pages/Bot.jsx';
 import ProfilePage from './pages/Profile.jsx';
@@ -19,7 +21,6 @@ import SettingsPage from './pages/Settings.jsx';
 
 import TestGabrielPage2 from './pages/TestGabriel2.jsx';
 import TestGabrielPage3 from './pages/TestGabriel3.jsx';
-import Resultados from './pages/Resultados.jsx';
 
 import './index.css';
 
@@ -54,6 +55,14 @@ const router = createBrowserRouter([
                 path: ':topic/:level/vocabulary',
                 element: <VocabularyPage />,
             },
+            {
+                path: ':topic/:level/listening',
+                element: <ListeningPage />,
+            },
+            {
+                path: ':topic/:level/results',
+                element: <ResultsPage />,
+            },
 			{
 				path: '/profile',
 				element: <ProfilePage />,
@@ -77,10 +86,6 @@ const router = createBrowserRouter([
 			{
 				path: '/test-gabriel3',
 				element: <TestGabrielPage3/>
-			},
-			{
-				path: '/resultados',
-				element: <Resultados/>
 			}
 		],
 	},

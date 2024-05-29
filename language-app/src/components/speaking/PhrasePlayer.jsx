@@ -32,7 +32,7 @@ function PhrasePlayer({ phrasePortuguese, phraseSpanish, onPlay, onRepeat }) {
   };
 
   return (
-    <Card className="text-center mb-2 p-6">
+    <Card className="text-center px-4 py-8">
       <h2 className="text-blue-800 mb-2 text-3xl font-semibold">{phrasePortuguese}</h2>
       <h3 className="text-gray-600 mb-4 text-lg">{phraseSpanish}</h3>
       <div className="flex justify-center items-center mb-4">
