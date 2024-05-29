@@ -44,7 +44,7 @@ function LevelsPage() {
 				<TopicLevelHeader
 					title={topic.levels[params.level - 1].title}
 					description={topic.levels[params.level - 1].description}
-					level={topic.levels[params.level - 1].id}
+					chip={['nivel:', topic.levels[params.level - 1].id].join(' ')}
 				/>
 			)}
 			<h1 className="font-bold text-2xl md:text-4xl mb-2">Expande tu conocimiento en:</h1>

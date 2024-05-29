@@ -67,7 +67,7 @@ function HomePage() {
 				<div className="max-w-screen-lg mx-auto flex flex-col md:flex-row gap-8 py-16 px-6">
 					<div className="flex flex-col gap-4 w-full md:w-1/2">
 						<h1 className="text-2xl font-bold uppercase text-center">Temas populares</h1>
-						<div className="grid grid-cols-2 gap-4">
+						<div className="grid grid-cols-2 gap-2 md:gap-4">
 							{topicsPopular && topicsPopular.slice(0, 4).map((item, index) => <TopicCard key={index} item={item} />)}
 						</div>
 					</div>

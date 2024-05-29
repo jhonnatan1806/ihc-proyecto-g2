@@ -47,7 +47,7 @@ function Header() {
 	};
 
 	return (
-		<Navbar disableAnimation isBordered className="sticky inset-0 z-50 backdrop-blur-md bg-white/75 py-2">
+		<Navbar disableAnimation isBordered className="sticky inset-0 z-50 backdrop-blur-md bg-white/75 md:py-2">
 			<NavbarContent className="sm:hidden" justify="start">
 				<NavbarMenuToggle />
 			</NavbarContent>

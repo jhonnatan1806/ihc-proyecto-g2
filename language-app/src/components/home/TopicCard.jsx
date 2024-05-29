@@ -17,7 +17,7 @@ function TopicCard(props) {
 				/>
 			</CardBody>
 			<CardFooter className="flex flex-col items-center">
-				<h4 className="font-bold text-lg line-clamp-1">{props?.item.title}</h4>
+				<h4 className="font-bold text-sm text-center line-clamp-1">{props?.item.title}</h4>
 			</CardFooter>
 		</Card>
 	);

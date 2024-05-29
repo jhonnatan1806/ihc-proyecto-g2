@@ -1,8 +1,8 @@
 // src/pages/Bot.jsx
 import React, { useState } from 'react';
-import ChatBot from '../components/ChatBot';
-import ChatList from '../components/ChatList';
-import FAQSection from '../components/FAQSection';
+import ChatBot from '../components/chat/ChatBot';
+import ChatList from '../components/chat/ChatList';
+import FAQSection from '../components/chat/FAQSection';
 import { FaChevronDown } from 'react-icons/fa';
 
 const BotPage = () => {
